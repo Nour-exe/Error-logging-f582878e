@@ -24,12 +24,11 @@ session_start();
 
 
 
-
-if (isset($_POST["choice"]) <= 3){
+if (isset($_POST["choice"]) && $_POST["choice"] <= 3){
     $_SESSION["choice"] =  $_POST["choice"];
-    echo " This is you're choice" . $_SESSION["choice"] ;
+    echo "This is you're choice " . $_SESSION["choice"] ;
 } else {
     echo "Digit must be between number 1 and number 3";
-    error_log ("Oops and error has ocurred", 3 , (errors_log.php));
+    error_log (" Oops and error has ocurred", 3 , "errors.log");
 }
 ?>
