@@ -24,6 +24,7 @@ session_start();
 
 
 
+
 if (isset($_POST["choice"]) <= 3){
     $_SESSION["choice"] =  $_POST["choice"];
     echo " This is you're choice" . $_SESSION["choice"] ;
